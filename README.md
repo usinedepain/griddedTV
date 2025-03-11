@@ -1,6 +1,6 @@
 # Grid is Good
 
-![Graphic: A grid for solving a TV-optimization problem is refined](graphics/ada_grid.png)
+![Graphic: A grid for solving a TV-optimization problem is refined](graphics/ada_grid.pdf)
 
 This repository contains codes used in the experiments of the [paper](https://arxiv.org/pdf/2301.07555)
 ```
