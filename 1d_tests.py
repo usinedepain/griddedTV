@@ -11,7 +11,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import time
 import cvxpy as cp
-import osqp
 
 
 
@@ -20,7 +19,7 @@ import osqp
 directories = ['1dtest', '1dtest_grad']
 use_grads=[False,True]    
 
-ks=[1]
+ks=[0,1]
 for k in ks :
     directory=directories[k]
     use_grad=use_grads[k]
@@ -107,8 +106,6 @@ for k in ks :
         name_save = directory+"/adarefine1D_%i.pdf"%it
         plt.savefig(name_save)  
         plt.show()
-        bashCommand = "pdfcrop " + name_save + "; rm " + name_save 
-        os.system(bashCommand)
         
         #%% Refining the largest cells
         for omega in Omegas:

@@ -20,7 +20,7 @@ import osqp
 directories = ['2dtest', '2dtest_grad']
 use_grads=[False,True]    
 
-ks=[1]
+ks=[0,1]
 for k in ks :
     directory=directories[k]
     use_grad=use_grads[k]
@@ -118,8 +118,6 @@ for k in ks :
         print(name_save)
         plt.savefig(name_save)  
         plt.show()
-        #bashCommand = "pdfcrop " + name_save + "; rm " + name_save 
-        #os.system(bashCommand)
         
         
         #%% Refining the largest cells
